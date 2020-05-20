@@ -1,0 +1,33 @@
+{
+  "name": "tripadvisor-reviews-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omgcrazybeans/tripadvisor-reviews-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omgcrazybeans/tripadvisor-reviews-proxy/issues"
+  },
+  "homepage": "https://github.com/omgcrazybeans/tripadvisor-reviews-proxy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2"
+  }
+}

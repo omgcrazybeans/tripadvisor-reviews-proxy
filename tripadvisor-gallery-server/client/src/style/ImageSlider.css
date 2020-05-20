@@ -1,0 +1,161 @@
+.container {
+  width: 43.75vw;
+  height: 30.625vw;
+  box-shadow: inset 0px 0px 120px 60px rgba(0,0,0,0.4);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity .5s ease-out;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerHover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.prev_button {
+  display: flex;
+  align-self: center;
+  float: left;
+}
+
+.slider_button_container {
+  float: right;
+  display: flex;
+  align-self: center;
+}
+
+.slider_button {
+  padding: 1.3rem;
+  background: rgba(0, 0, 0, 0.30);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.slider_button:focus {outline:0;}
+
+.slider_button:hover {
+  background: rgba(0, 0, 0, 0.50);
+  cursor: pointer;
+}
+
+.directional_arrow_right {
+  height: 2em;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+.directional_arrow_left {
+  height: 2em;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.view_all_button_div {
+  width: 43.25vw;
+  height: 30.125vw;
+  line-height: 30.125vw;
+  text-align: left;
+  position: absolute;
+}
+
+.view_all_button {
+  position: absolute;
+  bottom: 0;
+  margin-left: .5rem;
+  color: white;
+  font-size: 1.1rem;
+  display: inline;
+  margin-bottom: .5em;
+  padding: .2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background: none;
+  border: none;
+}
+
+.view_all_img {
+  height: 2vw;
+  padding-right: .5em;
+}
+
+.img_count {
+  height: 2vw;
+  line-height: 2vw;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-family: 'Roboto';
+}
+
+.view_all_button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fullView {
+  width: 43.25vw;
+  height: 30.125vw;
+  line-height: 30.125vw;
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.fullView span {
+  color: white;
+  background: rgba(0, 0, 0, 0.50);
+  padding: 1.2em;
+  border-radius: 5px;
+  animation: fadein .5s;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+}
+
+.diagonalArrows {
+  height: 0.9em;
+  margin-right: .3em;
+}
+
+.fade-exit {
+  animation: fadeout .5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fullView:hover {
+  cursor: pointer;
+}

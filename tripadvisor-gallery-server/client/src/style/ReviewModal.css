@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: black;
+}
+
+.image {
+  max-width: 70%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.leftContainer, .rightContainer {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60%;
+}
+
+.leftContainer {
+  position: absolute;
+  left: 0;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  /* align-content: center; */
+}
+
+.prev_button, .next_button {
+  display: flex;
+  justify-content: center;
+}
+
+.slider_button {
+  padding: 1.3rem;
+  background: rgba(0, 0, 0, 0.30);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  max-height: 10em;
+}
+
+.slider_button:hover {
+  cursor: pointer;
+}
+
+.directional_arrow_right {
+  height: 3em;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+.directional_arrow_left {
+  height: 3em;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.slider_button:hover {cursor:pointer;}
+
+.slider_button:focus {outline:0;}
+
+.showGalleryContainer, .showStatsContainer {
+  display: inline;
+  width: 100%;
+  height: 125px;
+}
+
+.showGalleryButton {
+  border: none;
+  background: white;
+  color: black;
+  height: 30%;
+  line-height: 1em;
+  font-size: 1em;
+  /* width: 25%; */
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  font-family: 'Roboto';
+  align-content: center;
+}
+
+.galleryIcon {
+  height: 1em;
+  margin-right: .3em;
+}
+
+.galleryIconAndText {
+  display: flex;
+  justify-content: center;
+}
+
+.showGalleryButton:hover {
+  cursor: pointer;
+}
+
+.activityPhotoStats {
+  margin-top: 0.5em;
+  color: white;
+  display: block;
+  text-align: right;
+  font-size: .8em;
+  padding-right: 1em;
+  font-family: 'Roboto';
+}
+
+.reviewComponent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

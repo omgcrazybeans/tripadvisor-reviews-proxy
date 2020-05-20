@@ -1,0 +1,27 @@
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1em;
+  font-size: 1.5em;
+  min-height: 7.5vh;
+  line-height: 7.5vh;
+  border-bottom: 1px solid lightgray;
+}
+
+.exit {
+  min-height: 100%;
+  border: none;
+  border-left: 1px solid lightgray;
+  border-top-right-radius: 5px;
+  padding: 0 .5em;
+  font-size: 1.2em;
+}
+
+.exitButton {
+  max-height: 1.2em;
+}
+
+.exit:hover {
+  cursor: pointer;
+}
